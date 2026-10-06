@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Odonto Braga — Dentista em Boiçucanga, São Sebastião</title>
+<meta name="description" content="Clínica odontológica em Boiçucanga: cuidado humano para a família toda, atenção a quem tem medo de dentista, ortodontia e atendimento de urgência — inclusive para quem está de passagem pelo litoral.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FBFCFA">
+<script>document.documentElement.classList.add("js")</script>
+
+<!-- Open Graph (prévia do link no WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Odonto Braga">
+<meta property="og:title" content="Odonto Braga — Dentista em Boiçucanga">
+<meta property="og:description" content="Cuidado humano para a família toda, inclusive para quem tem medo de dentista. Urgência odontológica para quem está de passagem pelo litoral. Agende pelo WhatsApp.">
+<meta property="og:url" content="https://demo-odonto-braga.vercel.app/">
+<meta property="og:image" content="https://demo-odonto-braga.vercel.app/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Paciente sorrindo enquanto conversa com o dentista no consultório">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fontes do Google Fonts (Bricolage Grotesque + Atkinson Hyperlegible Next), hospedadas junto do site -->
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-sm.webp" imagesrcset="img/hero-sm.webp 800w, img/hero.webp 1600w" imagesizes="(min-width: 960px) 48vw, 100vw" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%232F6B55'/%3E%3Cpath d='M10 9c2-1.5 4-1 6 0 2-1 4-1.5 6 0 2 1.6 1.6 5 .6 7.6-.8 2.2-1 6.4-2.6 6.4-1.5 0-1.4-4.6-4-4.6s-2.5 4.6-4 4.6c-1.6 0-1.8-4.2-2.6-6.4C8.4 14 8 10.6 10 9Z' fill='%23F7D774'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Odonto Braga",
+  "description": "Clínica odontológica em Boiçucanga com clínica geral, ortodontia, prevenção, restaurações, estética do sorriso e atendimento de urgência.",
+  "url": "https://demo-odonto-braga.vercel.app/",
+  "image": "https://demo-odonto-braga.vercel.app/img/og.jpg",
+  "telephone": "+55-12-99652-9016",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Manoel Francisco Ferro, 21 - Sala 14",
+    "addressLocality": "São Sebastião",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -23.7813, "longitude": -45.6223 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "reviewCount": "70" },
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "Clínica geral" },
+    { "@type": "MedicalProcedure", "name": "Ortodontia" },
+    { "@type": "MedicalProcedure", "name": "Urgência odontológica" },
+    { "@type": "MedicalProcedure", "name": "Limpeza e prevenção" },
+    { "@type": "MedicalProcedure", "name": "Restaurações" },
+    { "@type": "MedicalProcedure", "name": "Estética do sorriso" }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:500 700;font-stretch:100%;font-display:swap;src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/atkinson-hyperlegible-next-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --fundo:#FBFCFA;
+  --branco:#FFFFFF;
+  --salvia:#EEF4EF;       /* fundo verde bem claro */
+  --salvia-2:#DCE9DF;
+  --eucalipto:#2F6B55;    /* cor principal: botões e destaques */
+  --eucalipto-esc:#24533F;
+  --tinta:#1C2B25;        /* texto e bloco de urgência */
+  --suave:#51625A;        /* texto secundário */
+  --sol:#F7D774;          /* toque quente */
+  --sol-claro:#FDF4D3;
+  --linha:#DCE5DF;
+  --zap:#1FA855;
+  --raio:28px;
+  --titulo:"Bricolage Grotesque",ui-rounded,system-ui,sans-serif;
+  --texto:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--texto);font-size:1.0625rem;line-height:1.65;color:var(--tinta);background:var(--fundo);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--eucalipto);text-underline-offset:3px}
+h1,h2,h3{font-family:var(--titulo);font-weight:700;line-height:1.06;letter-spacing:-.025em;margin:0 0 .5em;color:var(--tinta);font-variation-settings:"opsz" 96}
+h1{font-size:clamp(2.6rem,7vw,4.6rem)}
+h2{font-size:clamp(2.05rem,4.6vw,3.3rem)}
+h3{font-size:1.3rem;letter-spacing:-.01em;font-variation-settings:"opsz" 24}
+.marca-texto{background:linear-gradient(transparent 62%,var(--sol) 62% 92%,transparent 92%);padding:0 .08em}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--eucalipto);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4.5rem,9vw,7.5rem) 0}
+.pular{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--tinta);color:#fff;padding:.6rem 1rem;border-radius:10px;font-weight:700}
+.pular:focus{top:1rem}
+.chapeu{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.92rem;color:var(--eucalipto);background:var(--salvia);padding:.35rem .85rem;border-radius:999px;margin-bottom:1.1rem}
+.chapeu svg{width:16px;height:16px}
+.lead{font-size:clamp(1.08rem,2vw,1.22rem);color:var(--suave);max-width:54ch}
+
+/* ---------- Botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:54px;padding:.85rem 1.5rem;border-radius:18px;border:2px solid transparent;font:700 1.02rem/1.15 var(--texto);text-decoration:none;cursor:pointer;transition:transform .2s cubic-bezier(.3,.7,.4,1.4),background-color .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.btn-pri{background:var(--eucalipto);color:#fff;box-shadow:0 10px 22px -12px rgba(47,107,85,.8)}
+.btn-pri:hover{background:var(--eucalipto-esc)}
+.btn-urg{background:var(--sol);color:var(--tinta)}
+.btn-urg:hover{background:#F3CB4E}
+.btn-contorno{background:#fff;color:var(--tinta);border-color:var(--salvia-2)}
+.btn-contorno:hover{border-color:var(--eucalipto)}
+.btn-zap{background:var(--zap);color:#fff}
+.btn-zap:hover{background:#17914A}
+.btn-claro{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-claro:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* ---------- Topo ---------- */
+.topo{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:box-shadow .3s}
+.topo.rolou{box-shadow:0 1px 0 var(--linha)}
+.topo .wrap{display:flex;align-items:center;gap:1rem;height:76px}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--tinta);margin-right:auto}
+.logo svg{width:40px;height:40px;flex:none}
+.logo strong{font:700 1.35rem/1 var(--titulo);letter-spacing:-.02em}
+.logo small{display:block;font-size:.76rem;color:var(--suave);font-weight:600;margin-top:.15rem}
+.menu{display:flex;align-items:center;gap:1.6rem}
+.menu a{color:var(--tinta);text-decoration:none;font-weight:600;font-size:.97rem;padding:.35rem .1rem;border-radius:6px;transition:color .2s}
+.menu a:hover{color:var(--eucalipto)}
+.topo .btn{min-height:46px;padding:.6rem 1.1rem;font-size:.95rem;border-radius:14px}
+.menu-btn{display:none;width:46px;height:46px;border:0;border-radius:14px;background:var(--salvia);color:var(--tinta);cursor:pointer;align-items:center;justify-content:center}
+.menu-btn svg{width:22px;height:22px}
+@media (max-width:1020px){
+  .menu{position:fixed;top:76px;left:0;right:0;background:var(--fundo);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.5rem;box-shadow:0 24px 30px -24px rgba(28,43,37,.35);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s}
+  .menu.aberto{opacity:1;visibility:visible;transform:none}
+  .menu a{padding:1rem 0;border-bottom:1px solid var(--linha);font-size:1.05rem;border-radius:0}
+  .menu-btn{display:inline-flex}
+}
+@media (max-width:480px){.topo .btn-topo{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(2.5rem,6vw,5rem) 0 clamp(3.5rem,7vw,5.5rem)}
+.hero .wrap{display:grid;gap:3rem;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:1.05fr .95fr;gap:4rem}}
+.hero h1{max-width:13ch}
+.acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+@media (max-width:520px){.acoes .btn{flex:1 1 100%}}
+.btn-urg .pulso{width:10px;height:10px;border-radius:50%;background:#C0392B;box-shadow:0 0 0 0 rgba(192,57,43,.6);animation:pulso 2s infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(192,57,43,.55)}70%{box-shadow:0 0 0 10px rgba(192,57,43,0)}100%{box-shadow:0 0 0 0 rgba(192,57,43,0)}}
+.hero-mini{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-top:1.75rem;font-size:.95rem;color:var(--suave);list-style:none;padding:0}
+.hero-mini li{display:flex;align-items:center;gap:.4rem}
+.hero-mini svg{width:18px;height:18px;color:var(--eucalipto)}
+.arco{position:relative;max-width:540px;justify-self:center;width:100%}
+.arco .foto{border-radius:999px 999px var(--raio) var(--raio);overflow:hidden;aspect-ratio:4/4.6;background:var(--salvia)}
+.arco .foto img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.flutua{position:absolute;background:#fff;border-radius:18px;padding:.8rem 1rem;box-shadow:0 18px 40px -20px rgba(28,43,37,.4);display:flex;align-items:center;gap:.7rem;font-size:.9rem;line-height:1.25}
+.flutua b{display:block;font:700 1.15rem/1.1 var(--titulo)}
+.flutua.nota{left:-.75rem;bottom:2.25rem}
+.flutua.urg{right:-.5rem;top:2.5rem}
+.flutua .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;flex:none}
+.flutua.nota .ic{background:var(--sol-claro);color:#B07D00}
+.flutua.urg .ic{background:#FDE7E4;color:#B0392B}
+.flutua .ic svg{width:22px;height:22px}
+@media (min-width:960px){.flutua.nota{left:-2.5rem}.flutua.urg{right:-1.75rem}}
+@media (max-width:959px){.flutua.urg{right:auto;left:-.25rem;top:1.25rem}.flutua.nota{left:auto;right:-.25rem;bottom:1.25rem}}
+
+.js .flutua{animation:boia 6s ease-in-out infinite}
+.js .flutua.urg{animation-delay:-3s}
+@keyframes boia{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* ---------- Faixa de confiança ---------- */
+.confianca{padding:0 0 clamp(3.5rem,7vw,5.5rem)}
+.faixa{list-style:none;margin:0;padding:clamp(1.25rem,3vw,1.75rem);background:var(--salvia);border-radius:var(--raio);display:grid;gap:1.25rem;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.faixa{grid-template-columns:repeat(4,1fr);gap:0}.faixa li+li{border-left:1px solid var(--salvia-2)}}
+.faixa li{display:flex;gap:.8rem;align-items:center;padding:0 .5rem}
+@media (min-width:900px){.faixa li{padding:0 1.5rem}}
+.faixa .ic{width:46px;height:46px;border-radius:14px;background:#fff;display:grid;place-items:center;color:var(--eucalipto);flex:none}
+.faixa .ic svg{width:24px;height:24px}
+.faixa b{display:block;font:700 1.05rem/1.2 var(--titulo)}
+.faixa span{font-size:.88rem;color:var(--suave);line-height:1.35;display:block}
+.faixa b span{display:inline;font-size:inherit;color:inherit}
+
+@media (max-width:560px){.faixa{grid-template-columns:1fr}.urg-acoes .btn{flex:1 1 100%}}
+/* ---------- Tratamentos ---------- */
+.cabeca{display:grid;gap:1rem;margin-bottom:clamp(2.5rem,5vw,3.5rem)}
+@media (min-width:900px){.cabeca{grid-template-columns:1fr 1fr;align-items:end;gap:4rem}.cabeca .lead{margin:0 0 .5rem}}
+.tratamentos{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+@media (min-width:700px){.tratamentos{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.tratamentos{grid-template-columns:repeat(3,1fr)}}
+.trat{position:relative;padding:1.75rem;border-radius:var(--raio);background:#fff;border:1.5px solid var(--linha);transition:border-color .25s,transform .25s,box-shadow .25s}
+.trat:hover{border-color:var(--salvia-2);transform:translateY(-3px);box-shadow:0 20px 40px -28px rgba(28,43,37,.35)}
+.trat .ic{width:56px;height:56px;border-radius:18px;background:var(--salvia);color:var(--eucalipto);display:grid;place-items:center;margin-bottom:1.1rem;transition:transform .3s}
+.trat:hover .ic{transform:rotate(-6deg) scale(1.05)}
+.trat .ic svg{width:30px;height:30px}
+.trat p{color:var(--suave);margin:0;font-size:.98rem}
+.trat.urgente{background:var(--tinta);border-color:var(--tinta);color:rgba(255,255,255,.85)}
+.trat.urgente h3{color:#fff}
+.trat.urgente p{color:rgba(255,255,255,.8)}
+.trat.urgente .ic{background:var(--sol);color:var(--tinta)}
+.trat.urgente a{color:var(--sol);font-weight:700;display:inline-flex;align-items:center;gap:.35rem;margin-top:.9rem}
+.trat.urgente a svg{width:18px;height:18px;transition:transform .2s}
+.trat.urgente a:hover svg{transform:translateX(3px)}
+.trat.orto{background:var(--sol-claro);border-color:#F4E6B0}
+.trat.orto .ic{background:#fff}
+.nota-cfo{font-size:.9rem;color:var(--suave);margin-top:1.5rem}
+
+/* ---------- Urgência ---------- */
+.urgencia{padding-top:0}
+.urg-caixa{position:relative;border-radius:calc(var(--raio) + 8px);overflow:hidden;background:var(--tinta);color:rgba(255,255,255,.86);display:grid;isolation:isolate}
+@media (min-width:960px){.urg-caixa{grid-template-columns:1.1fr .9fr}}
+.urg-texto{padding:clamp(2rem,5vw,3.75rem)}
+.urg-texto h2{color:#fff}
+.urg-texto .chapeu{background:rgba(247,215,116,.16);color:var(--sol)}
+.urg-lista{list-style:none;padding:0;margin:1.5rem 0 2rem;display:grid;gap:.6rem}
+.urg-lista li{display:flex;gap:.6rem;align-items:flex-start}
+.urg-lista svg{width:20px;height:20px;color:var(--sol);flex:none;margin-top:.2rem}
+.urg-acoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.urg-aviso{font-size:.86rem;color:rgba(255,255,255,.65);margin:1.5rem 0 0;max-width:56ch}
+.urg-foto{position:relative;min-height:260px}
+.urg-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.urg-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--tinta) 0%,rgba(28,43,37,0) 35%)}
+@media (max-width:959px){.urg-foto{order:-1}.urg-foto::after{background:linear-gradient(0deg,var(--tinta) 0%,rgba(28,43,37,0) 45%)}}
+.urg-selo{position:absolute;right:1.25rem;bottom:1.25rem;z-index:1;background:rgba(255,255,255,.95);color:var(--tinta);border-radius:16px;padding:.7rem 1rem;font-size:.88rem;line-height:1.3;max-width:230px}
+.urg-selo b{display:block;font:700 1.05rem var(--titulo)}
+
+/* ---------- Equipe ---------- */
+.equipe{background:var(--salvia)}
+.time{display:grid;gap:1.25rem}
+@media (min-width:700px){.time{grid-template-columns:repeat(3,1fr)}}
+.pessoa{background:#fff;border-radius:var(--raio);padding:1.25rem 1.25rem 1.5rem;text-align:center}
+.retrato{position:relative;width:min(180px,70%);aspect-ratio:1/1.12;margin:.5rem auto 1.1rem;border-radius:999px 999px 22px 22px;overflow:hidden;background:var(--salvia-2);display:grid;place-items:center}
+.retrato img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.retrato .ini{font:700 2.6rem/1 var(--titulo);color:var(--eucalipto);opacity:.6;margin-bottom:1.2rem}
+.retrato .falta{position:absolute;bottom:.75rem;left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;font-weight:700;color:var(--suave);background:rgba(255,255,255,.85);padding:.25rem .65rem;border-radius:999px;white-space:nowrap}
+.retrato .falta svg{width:14px;height:14px}
+.pessoa h3{margin-bottom:.2rem}
+.pessoa .esp{color:var(--eucalipto);font-weight:700;margin:0 0 .3rem}
+.pessoa .cro{font-size:.86rem;color:var(--suave);margin:0}
+.recepcao{margin-top:1.25rem;background:#fff;border-radius:var(--raio);padding:1.5rem 1.75rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+.recepcao .duplas{display:flex}
+.recepcao .duplas span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:700 1.2rem var(--titulo);border:3px solid #fff}
+.recepcao .duplas span:first-child{background:var(--sol);color:var(--tinta)}
+.recepcao .duplas span:last-child{background:var(--salvia-2);color:var(--eucalipto);margin-left:-12px}
+.recepcao p{margin:0;flex:1 1 280px;color:var(--suave)}
+.recepcao b{color:var(--tinta)}
+
+/* ---------- Medo ---------- */
+.medo .wrap{display:grid;gap:3rem;align-items:center}
+@media (min-width:960px){.medo .wrap{grid-template-columns:.95fr 1.05fr;gap:5rem}}
+.medo-fotos{position:relative;padding-bottom:3rem}
+.medo-fotos .a{border-radius:var(--raio);overflow:hidden;aspect-ratio:4/3}
+.medo-fotos .a img,.medo-fotos .b img{width:100%;height:100%;object-fit:cover}
+.medo-fotos .b{position:absolute;right:-.5rem;bottom:0;width:48%;aspect-ratio:1/1;border-radius:999px;overflow:hidden;border:8px solid var(--fundo)}
+@media (min-width:960px){.medo-fotos .b{right:-2rem}}
+.passos{list-style:none;padding:0;margin:2rem 0 0;counter-reset:p;display:grid;gap:1.1rem}
+.passos li{counter-increment:p;display:grid;grid-template-columns:48px 1fr;gap:1rem;align-items:start}
+.passos li::before{content:counter(p);width:48px;height:48px;border-radius:16px;background:var(--salvia);color:var(--eucalipto);display:grid;place-items:center;font:700 1.25rem var(--titulo)}
+.passos b{display:block;font-size:1.08rem;margin-bottom:.15rem}
+.passos span{color:var(--suave)}
+
+/* ---------- Agendamento ---------- */
+.agendar{background:linear-gradient(180deg,var(--fundo),var(--salvia) 30%)}
+.agendar .wrap{display:grid;gap:2.5rem}
+@media (min-width:980px){.agendar .wrap{grid-template-columns:.85fr 1.15fr;gap:4.5rem;align-items:start}}
+.info-ag{list-style:none;padding:0;margin:1.75rem 0;display:grid;gap:.85rem}
+.info-ag li{display:flex;gap:.75rem;align-items:flex-start}
+.info-ag .ic{width:40px;height:40px;border-radius:12px;background:#fff;color:var(--eucalipto);display:grid;place-items:center;flex:none}
+.info-ag .ic svg{width:20px;height:20px}
+.info-ag b{display:block}
+.foto-familia{border-radius:var(--raio);overflow:hidden;aspect-ratio:16/10;margin-top:.5rem}
+.foto-familia img{width:100%;height:100%;object-fit:cover}
+.info-ag span{color:var(--suave);font-size:.95rem}
+.form{background:#fff;border-radius:calc(var(--raio) + 4px);padding:clamp(1.25rem,3.5vw,2.25rem);box-shadow:0 30px 60px -40px rgba(28,43,37,.45)}
+.form h3{font-size:1.55rem;margin-bottom:1.25rem}
+.campos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem}
+.campo{display:flex;flex-direction:column;gap:.4rem;min-width:0}
+.campo.cheio{grid-column:1/-1}
+.campo>label,.campo legend{font-weight:700;font-size:.95rem;padding:0}
+.campo input[type=text],.campo input[type=date],.campo select{width:100%;min-width:0;min-height:54px;padding:.75rem .9rem;border:2px solid var(--salvia-2);border-radius:16px;font:400 1.02rem var(--texto);color:var(--tinta);background:#fff;transition:border-color .2s,box-shadow .2s}
+.campo input[type=date]{-webkit-appearance:none;appearance:none}
+.campo input:hover,.campo select:hover{border-color:#A9C7B5}
+.campo input:focus,.campo select:focus{outline:none;border-color:var(--eucalipto);box-shadow:0 0 0 4px rgba(47,107,85,.18)}
+.campo [aria-invalid="true"]{border-color:#B42318}
+fieldset.campo{border:0;margin:0;padding:0}
+.periodos{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.periodos label{position:relative;display:flex;flex-direction:column;gap:.1rem;padding:.75rem .9rem;border:2px solid var(--salvia-2);border-radius:16px;cursor:pointer;transition:border-color .2s,background .2s}
+.periodos input{position:absolute;opacity:0;pointer-events:none}
+.periodos b{font-size:1rem}
+.periodos small{font-size:.85rem;color:var(--suave)}
+.periodos label:has(input:checked){border-color:var(--eucalipto);background:var(--salvia)}
+.periodos label:has(input:focus-visible){outline:3px solid var(--eucalipto);outline-offset:2px}
+.checa{display:flex;align-items:center;gap:.6rem;font-size:.95rem;cursor:pointer}
+.checa input{width:22px;height:22px;accent-color:var(--eucalipto)}
+.erro{color:#B42318;font-size:.88rem;font-weight:700}
+.erro:empty{display:none}
+.sugerir{border:0;background:none;color:var(--eucalipto);font:700 .88rem var(--texto);text-decoration:underline;cursor:pointer;padding:0;margin-left:.25rem}
+.previa{margin-top:1.4rem;border-radius:20px;background:#EAF6EF;padding:1rem}
+.previa-t{display:flex;align-items:center;gap:.45rem;font-size:.86rem;font-weight:700;color:#1B5E3A;margin-bottom:.6rem}
+.previa-t svg{width:18px;height:18px}
+.bolha{background:#fff;border-radius:4px 18px 18px 18px;padding:.9rem 1rem;font-size:.95rem;line-height:1.5;white-space:pre-line}
+.form .btn{width:100%;margin-top:1.2rem}
+.aviso{font-size:.86rem;color:var(--suave);text-align:center;margin:.8rem 0 0}
+
+/* ---------- Avaliações ---------- */
+.aval .wrap{display:grid;gap:2.5rem}
+@media (min-width:960px){.aval .wrap{grid-template-columns:.75fr 1.25fr;gap:4rem;align-items:start}}
+.nota5{display:flex;align-items:center;gap:1rem;margin:1.5rem 0 1rem}
+.nota5 strong{font:700 clamp(4rem,10vw,5.5rem)/1 var(--titulo);letter-spacing:-.04em}
+.estrelas{display:inline-flex;gap:3px;color:#E0A800}
+.estrelas svg{width:24px;height:24px}
+.nota5 small{display:block;color:var(--suave);font-size:.95rem;margin-top:.25rem}
+.baloes{display:grid;gap:1.1rem}
+@media (min-width:700px){.baloes{grid-template-columns:1fr 1fr}.balao:first-child{grid-column:1/-1}}
+.balao{margin:0;padding:1.5rem 1.6rem;border-radius:24px 24px 24px 6px;background:#fff;border:1.5px solid var(--linha)}
+.balao:nth-child(2){background:var(--salvia);border-color:var(--salvia)}
+.balao:nth-child(3){background:var(--sol-claro);border-color:var(--sol-claro)}
+.balao blockquote{margin:0 0 1rem;font-size:1.04rem}
+.balao:first-child blockquote{font:600 clamp(1.25rem,2.4vw,1.55rem)/1.35 var(--titulo);letter-spacing:-.01em}
+.balao figcaption{font-weight:700;font-size:.93rem}
+.balao figcaption span{font-weight:400;color:var(--suave)}
+
+/* ---------- Localização ---------- */
+.local{background:var(--salvia)}
+.local .wrap{display:grid;gap:2rem}
+@media (min-width:960px){.local .wrap{grid-template-columns:1fr 1.1fr;gap:4rem;align-items:center}}
+.mapa{border-radius:var(--raio);overflow:hidden;aspect-ratio:1/1;background:var(--salvia-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F6B55' stroke-width='1.6'%3E%3Cpath d='M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z'/%3E%3Ccircle cx='12' cy='9.5' r='2.5'/%3E%3C/svg%3E") center/56px no-repeat}
+@media (min-width:700px){.mapa{aspect-ratio:5/4}}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+.endereco{display:flex;gap:.6rem;font-weight:700;font-size:1.06rem;margin:0 0 1.5rem}
+.endereco svg{width:22px;height:22px;color:var(--eucalipto);flex:none;margin-top:.2rem}
+.horario{background:#fff;border-radius:20px;padding:1.25rem 1.4rem;margin-bottom:1.75rem}
+.horario-topo{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:.6rem}
+.horario-topo b{font:700 1.1rem var(--titulo)}
+.status{display:inline-flex;align-items:center;gap:.4rem;font-size:.86rem;font-weight:700;padding:.3rem .7rem;border-radius:999px;background:var(--salvia);color:var(--suave)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.status.aberto{background:#E3F4E8;color:#1E7A3F}
+.horario dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:.35rem 1rem}
+.horario dt{color:var(--suave)}
+.horario dd{margin:0;font-weight:700}
+.botoes{display:flex;flex-wrap:wrap;gap:.75rem}
+
+/* ---------- FAQ ---------- */
+.faq .wrap{display:grid;gap:2rem}
+@media (min-width:960px){.faq .wrap{grid-template-columns:.8fr 1.2fr;gap:4rem}}
+details{background:#fff;border:1.5px solid var(--linha);border-radius:20px;margin-bottom:.75rem;transition:border-color .2s}
+details[open]{border-color:var(--salvia-2)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 1.25rem;font-weight:700;font-size:1.04rem}
+summary::-webkit-details-marker{display:none}
+summary .seta{flex:none;width:32px;height:32px;border-radius:10px;background:var(--salvia);display:grid;place-items:center;transition:transform .25s,background .25s}
+summary .seta svg{width:16px;height:16px}
+details[open] summary .seta{transform:rotate(180deg);background:var(--sol)}
+summary:hover{color:var(--eucalipto)}
+details p{color:var(--suave);margin:0;padding:0 1.25rem 1.25rem;max-width:64ch}
+
+/* ---------- Rodapé ---------- */
+.rodape{background:var(--tinta);color:rgba(255,255,255,.78);padding:3.5rem 0 calc(6rem + env(safe-area-inset-bottom));font-size:.95rem}
+@media (min-width:800px){.rodape{padding-bottom:3rem}}
+.rodape-grade{display:grid;gap:2rem}
+@media (min-width:800px){.rodape-grade{grid-template-columns:1.3fr 1fr 1fr}}
+.rodape .logo{color:#fff;margin-bottom:1rem}
+.rodape .logo small{color:rgba(255,255,255,.65)}
+.rodape h3{font-size:1rem;color:#fff;margin-bottom:.6rem}
+.rodape p{margin:0 0 .35rem}
+.rodape a{color:#fff}
+.rt{margin-top:2.5rem;padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.18);border-radius:16px;font-size:.92rem}
+.rodape-base{margin-top:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;font-size:.88rem;color:rgba(255,255,255,.6)}
+
+/* ---------- WhatsApp flutuante ---------- */
+.zap{position:fixed;right:max(1rem,env(safe-area-inset-right));bottom:max(1rem,env(safe-area-inset-bottom));z-index:60;width:60px;height:60px;border-radius:20px;background:var(--zap);color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(0,0,0,.45);transition:transform .2s cubic-bezier(.3,.7,.4,1.4)}
+.zap:hover{transform:scale(1.08)}
+.zap svg{width:32px;height:32px}
+
+/* ---------- Entrada ao rolar ---------- */
+.js .surge{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .surge.ok{opacity:1;transform:none}
+.js .surge.d1{transition-delay:.08s}.js .surge.d2{transition-delay:.16s}.js .surge.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .surge{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.28Z"/></symbol>
+  <symbol id="i-estrela" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+  <symbol id="i-dente" viewBox="0 0 24 24"><path d="M7.5 3.5c1.8-.9 3.1-.4 4.5.4 1.4-.8 2.7-1.3 4.5-.4 2.4 1.2 2.4 4.6 1.6 7.2-.6 1.9-.8 4.3-1.3 6.6-.4 1.7-.9 3.2-1.8 3.2-1.2 0-1.3-2.4-1.8-4.1-.3-1-.7-1.6-1.2-1.6s-.9.6-1.2 1.6c-.5 1.7-.6 4.1-1.8 4.1-.9 0-1.4-1.5-1.8-3.2-.5-2.3-.7-4.7-1.3-6.6-.8-2.6-.8-6 1.6-7.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-familia" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="7.5" cy="6.5" r="2.5"/><circle cx="16.5" cy="6.5" r="2.5"/><circle cx="12" cy="13" r="2"/><path d="M3.5 20v-4.5A3.5 3.5 0 0 1 7 12h1M20.5 20v-4.5A3.5 3.5 0 0 0 17 12h-1M9 20v-1.5a3 3 0 0 1 6 0V20"/></g></symbol>
+  <symbol id="i-raio" viewBox="0 0 24 24"><path d="M13 2 5 13.5h6L10 22l9-12h-6.5L13 2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-aparelho" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c3 2.5 15 2.5 18 0"/><rect x="5" y="9.6" width="3" height="3" rx=".6"/><rect x="10.5" y="10.4" width="3" height="3" rx=".6"/><rect x="16" y="9.6" width="3" height="3" rx=".6"/><path d="M4 16c3.5 2 12.5 2 16 0"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16.5 9.5"/></g></symbol>
+  <symbol id="i-ir" viewBox="0 0 24 24"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-baixo" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></g></symbol>
+  <symbol id="i-calendario" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+  <symbol id="i-coracao" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a href="#inicio" class="logo">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="13" fill="#2F6B55"/><path d="M12.5 11c2.6-1.6 5-1 7.5.3 2.5-1.3 4.9-1.9 7.5-.3 2.6 1.7 2.2 6 .9 9.3-1 2.6-1.2 8.4-3.4 8.4-1.9 0-1.8-5.6-5-5.6s-3.1 5.6-5 5.6c-2.2 0-2.4-5.8-3.4-8.4-1.3-3.3-1.7-7.6.9-9.3Z" fill="#F7D774"/></svg>
+      <span><strong>Odonto Braga</strong><small>Boiçucanga · São Sebastião</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#urgencia">Urgência</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#local">Como chegar</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a href="#agendar" class="btn btn-pri btn-topo">Agendar</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+<!-- 1. Hero -->
+<section class="hero" id="inicio" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div>
+      <span class="chapeu"><svg aria-hidden="true"><use href="#i-coracao"/></svg>Clínica odontológica em Boiçucanga</span>
+      <h1 id="h-hero">Cuidar do sorriso <span class="marca-texto">sem medo</span>, no seu tempo.</h1>
+      <p class="lead">Atendimento humano e atento para a família toda — de quem vem pela primeira vez a quem precisa de socorro rápido nas férias.</p>
+      <div class="acoes">
+        <a href="#agendar" class="btn btn-pri">Agendar avaliação <svg aria-hidden="true"><use href="#i-ir"/></svg></a>
+        <a href="#urgencia" class="btn btn-urg"><span class="pulso" aria-hidden="true"></span>Urgência odontológica</a>
+      </div>
+      <ul class="hero-mini">
+        <li><svg aria-hidden="true"><use href="#i-relogio"/></svg><span data-cfg="horarioCurto">Seg a sex, 9h às 17h</span></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Centro de Boiçucanga</li>
+      </ul>
+    </div>
+    <div class="arco">
+      <div class="foto">
+        <img data-foto="hero" src="img/hero-sm.webp" srcset="img/hero-sm.webp 800w, img/hero.webp 1600w" sizes="(min-width: 960px) 48vw, 100vw" width="1600" height="1200" alt="Paciente sorrindo, sentada na cadeira, conversando com o dentista no consultório" fetchpriority="high">
+      </div>
+      <div class="flutua nota"><span class="ic"><svg aria-hidden="true"><use href="#i-estrela"/></svg></span><span><b><span data-cfg="nota">5,0</span> no Google</b><span data-cfg="avaliacoesTexto">mais de 70 avaliações</span></span></div>
+      <div class="flutua urg"><span class="ic"><svg aria-hidden="true"><use href="#i-raio"/></svg></span><span><b>Urgência</b>inclusive para turistas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Faixa de confiança -->
+<section class="confianca" aria-label="Por que confiar na Odonto Braga">
+  <div class="wrap">
+    <ul class="faixa surge">
+      <li><span class="ic"><svg aria-hidden="true"><use href="#i-estrela"/></svg></span><span><b><span data-cfg="nota">5,0</span> no Google</b><span data-cfg="avaliacoesTexto">mais de 70 avaliações</span></span></li>
+      <li><span class="ic"><svg aria-hidden="true"><use href="#i-familia"/></svg></span><span><b>Família toda</b><span>das crianças aos avós</span></span></li>
+      <li><span class="ic"><svg aria-hidden="true"><use href="#i-raio"/></svg></span><span><b>Urgência</b><span>para moradores e turistas</span></span></li>
+      <li><span class="ic"><svg aria-hidden="true"><use href="#i-aparelho"/></svg></span><span><b>Ortodontia</b><span>com acompanhamento próximo</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. Tratamentos -->
+<section id="tratamentos" aria-labelledby="h-trat" style="padding-top:0">
+  <div class="wrap">
+    <div class="cabeca surge">
+      <div>
+        <span class="chapeu"><svg aria-hidden="true"><use href="#i-dente"/></svg>Tratamentos</span>
+        <h2 id="h-trat">Do check-up ao aparelho, tudo explicado antes.</h2>
+      </div>
+      <p class="lead">Cada tratamento começa com uma avaliação e uma conversa franca sobre as opções para o seu caso.</p>
+    </div>
+    <ul class="tratamentos">
+      <li class="trat surge"><span class="ic"><svg aria-hidden="true"><use href="#i-dente"/></svg></span><h3>Clínica geral</h3><p>Consultas de rotina, diagnóstico e um plano de tratamento explicado passo a passo.</p></li>
+      <li class="trat orto surge d1"><span class="ic"><svg aria-hidden="true"><use href="#i-aparelho"/></svg></span><h3>Ortodontia</h3><p>Aparelhos para crianças, adolescentes e adultos, com consultas de acompanhamento e prazos combinados desde o início.</p></li>
+      <li class="trat urgente surge d2"><span class="ic"><svg aria-hidden="true"><use href="#i-raio"/></svg></span><h3>Urgência</h3><p>Dor de dente, dente quebrado, inchaço ou restauração que caiu. Inclusive para quem está de passagem.</p><a href="#urgencia">Preciso de atendimento <svg aria-hidden="true"><use href="#i-ir"/></svg></a></li>
+      <li class="trat surge"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="2.6"/></svg></span><h3>Limpeza e prevenção</h3><p>Limpeza profissional, orientação de escovação e check-ups para manter a saúde da boca em dia.</p></li>
+      <li class="trat surge d1"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M7.5 3.5c1.8-.9 3.1-.4 4.5.4 1.4-.8 2.7-1.3 4.5-.4 2.4 1.2 2.4 4.6 1.6 7.2-.6 1.9-.8 4.3-1.3 6.6-.4 1.7-.9 3.2-1.8 3.2-1.2 0-1.3-2.4-1.8-4.1-.3-1-.7-1.6-1.2-1.6s-.9.6-1.2 1.6c-.5 1.7-.6 4.1-1.8 4.1-.9 0-1.4-1.5-1.8-3.2-.5-2.3-.7-4.7-1.3-6.6-.8-2.6-.8-6 1.6-7.2Z"/><circle cx="14.5" cy="8.2" r="1.6" fill="currentColor" stroke="none"/></svg></span><h3>Restaurações</h3><p>Tratamento de cáries e reparo de dentes desgastados ou fraturados, com materiais da cor do dente.</p></li>
+      <li class="trat surge d2"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M5 11c2 4.5 12 4.5 14 0"/><path d="M8 6.5v1.5M16 6.5v1.5"/><path d="M19.5 3.5l.5 1.5 1.5.5-1.5.5-.5 1.5-.5-1.5-1.5-.5 1.5-.5z" fill="currentColor"/></svg></span><h3>Estética do sorriso</h3><p>Avaliação das opções estéticas com indicação clínica e conversa honesta sobre o que faz sentido para você.</p></li>
+    </ul>
+    <p class="nota-cfo">Valores e indicação de cada tratamento são definidos em consulta, após avaliação clínica.</p>
+  </div>
+</section>
+
+<!-- 4. Urgência -->
+<section class="urgencia" id="urgencia" aria-labelledby="h-urg">
+  <div class="wrap">
+    <div class="urg-caixa surge">
+      <div class="urg-texto">
+        <span class="chapeu"><svg aria-hidden="true"><use href="#i-raio"/></svg>Urgência odontológica</span>
+        <h2 id="h-urg">Está de férias no litoral e precisa de dentista?</h2>
+        <p>Dor de dente não escolhe hora — nem viagem. Fale com a gente pelo WhatsApp e a recepção encaixa seu atendimento o mais rápido possível.</p>
+        <ul class="urg-lista">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Dor de dente, inchaço ou sensibilidade forte</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Dente quebrado, restauração ou coroa que caiu</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Aparelho ortodôntico machucando ou solto</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Atendemos turistas e pacientes estrangeiros</li>
+        </ul>
+        <div class="urg-acoes">
+          <a class="btn btn-zap" id="zapUrgencia" href="#agendar" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-zap"/></svg>Pedir atendimento de urgência</a>
+          <a class="btn btn-claro" id="zapUrgenciaEn" href="#agendar" target="_blank" rel="noopener" lang="en">Tourist? Message us in English</a>
+        </div>
+        <p class="urg-aviso">Atendimento de urgência de segunda a sexta, das 9h às 17h. Em caso de trauma grave no rosto, sangramento que não para ou dificuldade para respirar ou engolir, procure imediatamente o pronto-socorro mais próximo.</p>
+      </div>
+      <div class="urg-foto">
+        <img src="img/praia-sm.webp" srcset="img/praia-sm.webp 800w, img/praia.webp 1600w" sizes="(min-width:960px) 45vw, 100vw" width="1600" height="1066" alt="Praia do litoral norte com areia clara e morro coberto de mata" loading="lazy" decoding="async">
+        <div class="urg-selo"><b>Boiçucanga</b>no caminho entre Maresias, Camburi e Barra do Sahy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Equipe -->
+<section class="equipe" id="equipe" aria-labelledby="h-equipe">
+  <div class="wrap">
+    <div class="cabeca surge">
+      <div>
+        <span class="chapeu"><svg aria-hidden="true"><use href="#i-familia"/></svg>Equipe</span>
+        <h2 id="h-equipe">Gente que conhece você pelo nome.</h2>
+      </div>
+      <p class="lead">Uma equipe pequena e próxima, do primeiro “bom dia” na recepção até o fim do tratamento.</p>
+    </div>
+    <div class="time" id="time"><!-- preenchido pelo CONFIG.equipe --></div>
+    <div class="recepcao surge">
+      <div class="duplas" aria-hidden="true"><span>D</span><span>J</span></div>
+      <p><b>Débora e Janaína</b>, na recepção, cuidam do seu agendamento, tiram dúvidas e encaixam as urgências do dia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Medo de dentista -->
+<section class="medo" id="medo" aria-labelledby="h-medo">
+  <div class="wrap">
+    <div class="medo-fotos surge">
+      <div class="a"><img src="img/sala-espera-sm.webp" srcset="img/sala-espera-sm.webp 800w, img/sala-espera.webp 1600w" sizes="(min-width:960px) 45vw, 100vw" width="1600" height="1066" alt="Sala de espera tranquila com parede verde-sálvia, poltrona e plantas" loading="lazy" decoding="async"></div>
+      <div class="b"><img src="img/conversa-sm.webp" width="800" height="533" alt="Paciente e dentista sorrindo durante uma conversa no consultório" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="surge d1">
+      <span class="chapeu"><svg aria-hidden="true"><use href="#i-coracao"/></svg>Medo de dentista?</span>
+      <h2 id="h-medo">Tudo bem sentir medo. A gente vai com calma.</h2>
+      <p class="lead">Muita gente adia a consulta por ansiedade ou por uma experiência ruim no passado. Aqui, o atendimento é pensado para você se sentir no controle.</p>
+      <ol class="passos">
+        <li><span><b>Primeiro, uma conversa</b><span>Antes de qualquer procedimento, você conta suas preocupações e a gente escuta.</span></span></li>
+        <li><span><b>Cada etapa explicada</b><span>Você sabe o que vai acontecer antes de acontecer — sem surpresas.</span></span></li>
+        <li><span><b>Um sinal para pausar</b><span>Combinamos um gesto: levantou a mão, a gente para na hora.</span></span></li>
+        <li><span><b>No seu ritmo</b><span>Se precisar, dividimos o tratamento em consultas mais curtas.</span></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Agendamento -->
+<section class="agendar" id="agendar" aria-labelledby="h-agendar">
+  <div class="wrap">
+    <div class="surge">
+      <span class="chapeu"><svg aria-hidden="true"><use href="#i-calendario"/></svg>Agendamento</span>
+      <h2 id="h-agendar">Agende pelo WhatsApp em um minuto.</h2>
+      <p class="lead">Escolha o tratamento, o dia e o período. A mensagem vai pronta para a recepção confirmar o horário.</p>
+      <ul class="info-ag">
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-relogio"/></svg></span><span><b data-cfg="horarioLongo">Segunda a sexta, das 9h às 17h</b><span>Não atendemos aos sábados e domingos.</span></span></li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-familia"/></svg></span><span><b>Família toda</b><span>Pode agendar para você, seus filhos ou seus pais.</span></span></li>
+        <li><span class="ic"><svg aria-hidden="true"><use href="#i-raio"/></svg></span><span><b>É urgente?</b><span>Use o <a href="#urgencia">atendimento de urgência</a> — a recepção prioriza.</span></span></li>
+      </ul>
+      <div class="foto-familia"><img src="img/familia-sm.webp" srcset="img/familia-sm.webp 800w, img/familia.webp 1600w" sizes="(min-width:980px) 40vw, 100vw" width="1600" height="1066" alt="Pai, mãe e filho pequeno sorrindo juntos ao ar livre" loading="lazy" decoding="async"></div>
+    </div>
+
+    <form class="form surge d1" id="form" novalidate>
+      <h3>Agendar avaliação</h3>
+      <div class="campos">
+        <div class="campo cheio"><label for="tratamento">Tratamento de interesse</label><select id="tratamento"></select></div>
+        <div class="campo cheio"><label for="dia">Dia preferido</label><input type="date" id="dia" required aria-describedby="eDia dicaDia"><span class="erro" id="eDia" aria-live="polite"></span><span id="dicaDia" class="aviso" style="text-align:left;margin:0">Segunda a sexta-feira, exceto feriados.</span></div>
+        <fieldset class="campo cheio">
+          <legend>Período</legend>
+          <div class="periodos">
+            <label><input type="radio" name="periodo" value="manha" checked><b>Manhã</b><small>9h às 12h</small></label>
+            <label><input type="radio" name="periodo" value="tarde"><b>Tarde</b><small>13h às 17h</small></label>
+          </div>
+        </fieldset>
+        <div class="campo cheio"><label for="nome">Nome do paciente</label><input type="text" id="nome" autocomplete="name" placeholder="Nome e sobrenome" required aria-describedby="eNome"><span class="erro" id="eNome" aria-live="polite"></span></div>
+        <div class="campo cheio"><label class="checa"><input type="checkbox" id="primeira"> É a primeira consulta na clínica</label></div>
+      </div>
+      <div class="previa">
+        <div class="previa-t"><svg aria-hidden="true"><use href="#i-zap"/></svg>Prévia da mensagem</div>
+        <div class="bolha" id="bolha" aria-live="polite"></div>
+      </div>
+      <button class="btn btn-zap" type="submit"><svg aria-hidden="true"><use href="#i-zap"/></svg>Enviar pelo WhatsApp</button>
+      <p class="aviso">O horário é confirmado pela recepção, conforme a agenda do dia.</p>
+    </form>
+  </div>
+</section>
+
+<!-- 8. Avaliações -->
+<section class="aval" id="avaliacoes" aria-labelledby="h-aval">
+  <div class="wrap">
+    <div class="surge">
+      <span class="chapeu"><svg aria-hidden="true"><use href="#i-estrela"/></svg>Avaliações</span>
+      <h2 id="h-aval">O que mais ouvimos dos pacientes.</h2>
+      <div class="nota5"><strong data-cfg="nota">5,0</strong><span><span class="estrelas" aria-hidden="true"><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg></span><small>Nota no Google · <span data-cfg="avaliacoesTexto">mais de 70 avaliações</span></small></span></div>
+      <a class="btn btn-contorno" id="linkGoogle" href="https://www.google.com/search?q=Odonto+Braga+Boi%C3%A7ucanga" target="_blank" rel="noopener">Ver avaliações no Google</a>
+    </div>
+    <div class="baloes">
+      <figure class="balao surge"><blockquote>“Eu tinha pavor de dentista e fui atendida com uma paciência enorme. Explicaram cada etapa antes de começar.”</blockquote><figcaption>Camila <span>· São Sebastião</span></figcaption></figure>
+      <figure class="balao surge d1"><blockquote>“Quebrei um dente nas férias em Boiçucanga e fui atendido rapidinho. Equipe muito atenciosa com quem é de fora.”</blockquote><figcaption>Marcelo <span>· São Paulo</span></figcaption></figure>
+      <figure class="balao surge d2"><blockquote>“Levo a família toda. Atenção aos detalhes do começo ao fim, e a recepção é um carinho à parte.”</blockquote><figcaption>Patrícia <span>· Boiçucanga</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Localização -->
+<section class="local" id="local" aria-labelledby="h-local">
+  <div class="wrap">
+    <div class="surge">
+      <span class="chapeu"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</span>
+      <h2 id="h-local">No centro de Boiçucanga.</h2>
+      <p class="endereco"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-cfg="enderecoCompleto">Rua Manoel Francisco Ferro, 21 — Sala 14, Boiçucanga, São Sebastião – SP</span></p>
+      <div class="horario">
+        <div class="horario-topo"><b>Horário</b><span class="status" id="status">Seg a sex</span></div>
+        <dl>
+          <dt>Segunda a sexta</dt><dd data-cfg="horarioDias">9h às 17h</dd>
+          <dt>Sábado e domingo</dt><dd>Fechado</dd>
+        </dl>
+      </div>
+      <div class="botoes">
+        <a class="btn btn-pri" id="linkMaps" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Manoel+Francisco+Ferro%2C+21+Boi%C3%A7ucanga+S%C3%A3o+Sebasti%C3%A3o" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        <a class="btn btn-contorno" id="linkWaze" href="https://waze.com/ul?q=Rua%20Manoel%20Francisco%20Ferro%2C%2021%20Boi%C3%A7ucanga&amp;navigate=yes" target="_blank" rel="noopener">Ir com Waze</a>
+      </div>
+    </div>
+    <div class="mapa surge d1">
+      <iframe title="Mapa com a localização da Odonto Braga" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Manoel+Francisco+Ferro,+21+-+Boi%C3%A7ucanga,+S%C3%A3o+Sebasti%C3%A3o+-+SP&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Dúvidas -->
+<section class="faq" id="duvidas" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="surge">
+      <span class="chapeu">Dúvidas frequentes</span>
+      <h2 id="h-faq">Perguntas que todo mundo faz.</h2>
+      <p class="lead">Ficou alguma dúvida? A recepção responde pelo WhatsApp.</p>
+    </div>
+    <div class="surge d1">
+      <details><summary>Vocês atendem urgência no mesmo dia?<span class="seta" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></summary><p>A recepção prioriza os casos de urgência e procura encaixar o atendimento o quanto antes, de segunda a sexta, das 9h às 17h. Chame pelo WhatsApp e conte o que está sentindo.</p></details>
+      <details><summary>Estou de férias na região. Posso ser atendido?<span class="seta" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></summary><p>Sim. Atendemos turistas e pacientes estrangeiros. Boiçucanga fica perto de Maresias, Camburi e Barra do Sahy.</p></details>
+      <details><summary>Tenho muito medo de dentista. Como funciona?<span class="seta" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></summary><p>Começamos com uma conversa, explicamos cada etapa antes de fazer e combinamos um sinal para pausar quando você quiser. Se for melhor, o tratamento é dividido em consultas mais curtas.</p></details>
+      <details><summary>Vocês atendem crianças?<span class="seta" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></summary><p>Sim, atendemos a família toda. É só informar a idade da criança ao agendar.</p></details>
+      <details><summary>Quanto custa a consulta?<span class="seta" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></summary><p>Os valores dependem da avaliação de cada caso e são informados pela recepção. Não divulgamos preços pelo site.</p></details>
+      <details><summary>Vocês aceitam convênio?<span class="seta" aria-hidden="true"><svg><use href="#i-baixo"/></svg></span></summary><p>Consulte a recepção pelo WhatsApp sobre convênios e formas de pagamento aceitos.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-grade">
+      <div>
+        <a href="#inicio" class="logo">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="13" fill="#2F6B55"/><path d="M12.5 11c2.6-1.6 5-1 7.5.3 2.5-1.3 4.9-1.9 7.5-.3 2.6 1.7 2.2 6 .9 9.3-1 2.6-1.2 8.4-3.4 8.4-1.9 0-1.8-5.6-5-5.6s-3.1 5.6-5 5.6c-2.2 0-2.4-5.8-3.4-8.4-1.3-3.3-1.7-7.6.9-9.3Z" fill="#F7D774"/></svg>
+          <span><strong>Odonto Braga</strong><small>Boiçucanga · São Sebastião</small></span>
+        </a>
+        <p>Cuidado humano para a família toda.</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>WhatsApp: <a id="zapRodape" href="#agendar" target="_blank" rel="noopener" data-cfg="whatsappTexto">(12) 99652-9016</a></p>
+        <p data-cfg="horarioLongo">Segunda a sexta, das 9h às 17h</p>
+      </div>
+      <div>
+        <h3>Endereço</h3>
+        <p data-cfg="enderecoLinha1">Rua Manoel Francisco Ferro, 21 — Sala 14</p>
+        <p>Boiçucanga, São Sebastião – SP</p>
+      </div>
+    </div>
+    <p class="rt" data-cfg="responsavel">Responsável técnico: Dr(a). ____ — CRO-SP ____</p>
+    <div class="rodape-base">
+      <span>© <span id="ano">2026</span> Odonto Braga</span>
+      <span>Site feito por <a id="devLink" href="https://github.com/pipoleal" target="_blank" rel="noopener">Felipe Leal</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="zap" id="zap" href="#agendar" target="_blank" rel="noopener" aria-label="Falar com a recepção pelo WhatsApp"><svg aria-hidden="true"><use href="#i-zap"/></svg></a>
+
+<script>
+/* =========================================================
+   CONFIG — troque aqui os dados da clínica
+   ========================================================= */
+const CONFIG = {
+  nome: "Odonto Braga",
+  whatsapp: "5512996529016",                 // DDI + DDD + número, só dígitos
+  whatsappTexto: "(12) 99652-9016",
+  endereco: "Rua Manoel Francisco Ferro, 21 — Sala 14",
+  bairro: "Boiçucanga",
+  cidade: "São Sebastião – SP",
+  abre: 9, fecha: 17,                        // horário (seg a sex)
+  nota: "5,0",
+  avaliacoes: "70",
+  responsavel: "Responsável técnico: Dr(a). ____ — CRO-SP ____",
+  equipe: [
+    { nome: "Dr. Enrique", especialidade: "Cirurgião-dentista", cro: "CRO-SP 00000", foto: "" },
+    { nome: "Dra. Tatiana", especialidade: "Cirurgiã-dentista", cro: "CRO-SP 00000", foto: "" },
+    { nome: "Dra. Erica", especialidade: "Ortodontia", cro: "CRO-SP 00000", foto: "" }  // foto: "img/dra-erica.webp"
+  ],
+  // Feriados (MM-DD) em que a clínica não atende. Carnaval, Sexta-feira Santa e Corpus Christi são calculados automaticamente.
+  feriados: { "01-01": "Ano-Novo", "01-20": "Dia de São Sebastião", "04-21": "Tiradentes", "05-01": "Dia do Trabalho", "09-07": "Independência",
+    "10-12": "Nossa Senhora Aparecida", "11-02": "Finados", "11-15": "Proclamação da República", "11-20": "Consciência Negra", "12-25": "Natal" },
+  tratamentos: ["Avaliação / ainda não sei", "Clínica geral", "Ortodontia", "Limpeza e prevenção", "Restaurações", "Estética do sorriso", "Urgência"],
+  fotos: { hero: "img/hero.webp" },
+  devLink: "https://github.com/pipoleal"
+};
+
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+
+/* ---------- Aplica o CONFIG ---------- */
+const textos = {
+  nota: CONFIG.nota,
+  avaliacoesTexto: `mais de ${CONFIG.avaliacoes} avaliações`,
+  whatsappTexto: CONFIG.whatsappTexto,
+  enderecoCompleto: `${CONFIG.endereco}, ${CONFIG.bairro}, ${CONFIG.cidade}`,
+  enderecoLinha1: CONFIG.endereco,
+  horarioCurto: `Seg a sex, ${CONFIG.abre}h às ${CONFIG.fecha}h`,
+  horarioLongo: `Segunda a sexta, das ${CONFIG.abre}h às ${CONFIG.fecha}h`,
+  horarioDias: `${CONFIG.abre}h às ${CONFIG.fecha}h`,
+  responsavel: CONFIG.responsavel
+};
+$$("[data-cfg]").forEach(el => { const v = textos[el.dataset.cfg]; if (v) el.textContent = v; });
+$$("[data-foto]").forEach(img => {
+  const src = CONFIG.fotos[img.dataset.foto];
+  if (src && !img.getAttribute("src").includes(src.replace(/^.*\//, "").replace(".webp", ""))) { img.removeAttribute("srcset"); img.src = src; }
+});
+const endBusca = encodeURIComponent(`${CONFIG.endereco.replace(" — ", " ")}, ${CONFIG.bairro}, ${CONFIG.cidade}`);
+$("#linkMaps").href = `https://www.google.com/maps/search/?api=1&query=${endBusca}`;
+$("#linkWaze").href = `https://waze.com/ul?q=${endBusca}&navigate=yes`;
+$("#linkGoogle").href = `https://www.google.com/search?q=${encodeURIComponent(CONFIG.nome + " " + CONFIG.bairro)}`;
+$("#devLink").href = CONFIG.devLink;
+$("#ano").textContent = new Date().getFullYear();
+
+// Equipe (com espaço para foto)
+const iniciais = n => n.replace(/^Dra?\.\s*/, "").split(" ").map(p => p[0]).join("").slice(0, 2);
+$("#time").replaceChildren(...CONFIG.equipe.map((p, i) => {
+  const el = document.createElement("article");
+  el.className = "pessoa surge" + (i ? ` d${i}` : "");
+  el.innerHTML = `<div class="retrato">${p.foto ? `<img src="${p.foto}" alt="" loading="lazy">` : `<span class="ini" aria-hidden="true"></span><span class="falta"><svg aria-hidden="true"><use href="#i-camera"/></svg>Foto em breve</span>`}</div><h3></h3><p class="esp"></p><p class="cro"></p>`;
+  if (p.foto) el.querySelector("img").alt = `Foto de ${p.nome}`; else el.querySelector(".ini").textContent = iniciais(p.nome);
+  el.querySelector("h3").textContent = p.nome; el.querySelector(".esp").textContent = p.especialidade; el.querySelector(".cro").textContent = p.cro;
+  return el;
+}));
+
+/* ---------- WhatsApp ---------- */
+const linkZap = msg => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+const zapGeral = linkZap(`Olá! Vim pelo site da ${CONFIG.nome} e gostaria de informações.`);
+$("#zap").href = zapGeral; $("#zapRodape").href = zapGeral;
+$("#zapUrgencia").href = linkZap(`Olá! Preciso de um atendimento odontológico de URGÊNCIA.\n\n• Nome: \n• O que estou sentindo: \n• Estou em: (cidade/praia)\n\nVocês conseguem me encaixar hoje?`);
+$("#zapUrgenciaEn").href = linkZap(`Hi! I need an URGENT dental appointment.\n\n• Name: \n• What I'm feeling: \n• I'm staying at: (town/beach)\n\nCould you see me today?`);
+
+/* ---------- Topo e menu ---------- */
+const topo = $("#topo"), menu = $("#menu"), menuBtn = $("#menuBtn");
+const aoRolar = () => topo.classList.toggle("rolou", scrollY > 10);
+addEventListener("scroll", aoRolar, { passive: true }); aoRolar();
+const fecharMenu = () => { menu.classList.remove("aberto"); menuBtn.setAttribute("aria-expanded", "false"); menuBtn.setAttribute("aria-label", "Abrir menu"); };
+menuBtn.addEventListener("click", () => {
+  const aberto = menu.classList.toggle("aberto");
+  menuBtn.setAttribute("aria-expanded", aberto); menuBtn.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+});
+menu.addEventListener("click", e => { if (e.target.closest("a")) fecharMenu(); });
+addEventListener("keydown", e => { if (e.key === "Escape" && menu.classList.contains("aberto")) { fecharMenu(); menuBtn.focus(); } });
+
+/* ---------- Aberto agora? (horário de Brasília) ---------- */
+function agoraSP() {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: "America/Sao_Paulo", weekday: "short", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date()).map(x => [x.type, x.value]));
+  return { dia: p.weekday, hora: (+p.hour % 24) + (+p.minute) / 60 };
+}
+(function status() {
+  const { dia, hora } = agoraSP(), util = !["Sat", "Sun"].includes(dia), aberto = util && hora >= CONFIG.abre && hora < CONFIG.fecha;
+  const el = $("#status"); el.classList.toggle("aberto", aberto);
+  el.textContent = aberto ? `Aberto agora · até ${CONFIG.fecha}h` : "Fechado agora";
+})();
+
+/* ---------- Agendamento ---------- */
+const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const deISO = s => { const [a, m, d] = s.split("-").map(Number); return new Date(a, m - 1, d); };
+const fimDeSemana = s => [0, 6].includes(deISO(s).getDay());
+// Páscoa (algoritmo de Meeus) para os feriados móveis
+function pascoa(a) {
+  const b = a % 19, c = Math.floor(a / 100), d = a % 100, e = Math.floor(c / 4), f = c % 4, g = Math.floor((c + 8) / 25), h = Math.floor((c - g + 1) / 3),
+    i = (19 * b + c - e - h + 15) % 30, k = Math.floor(d / 4), l = d % 4, m = (32 + 2 * f + 2 * k - i - l) % 7, n = Math.floor((b + 11 * i + 22 * m) / 451),
+    mes = Math.floor((i + m - 7 * n + 114) / 31), dia = ((i + m - 7 * n + 114) % 31) + 1;
+  return new Date(a, mes - 1, dia);
+}
+function feriado(s) {
+  const fixo = CONFIG.feriados[s.slice(5)]; if (fixo) return fixo;
+  const p = pascoa(+s.slice(0, 4)), rel = n => { const d = new Date(p); d.setDate(d.getDate() + n); return iso(d); };
+  return { [rel(-48)]: "Carnaval", [rel(-47)]: "Carnaval", [rel(-2)]: "Sexta-feira Santa", [rel(60)]: "Corpus Christi" }[s] || null;
+}
+const naoAtende = s => fimDeSemana(s) || !!feriado(s);
+const proximoUtil = s => { const d = deISO(s); do d.setDate(d.getDate() + 1); while (naoAtende(iso(d))); return iso(d); };
+const hoje = iso(new Date());
+const fmt = s => deISO(s).toLocaleDateString("pt-BR", { weekday: "long", day: "2-digit", month: "2-digit" });
+
+const form = $("#form"), dia = $("#dia"), nome = $("#nome"), trat = $("#tratamento");
+trat.replaceChildren(...CONFIG.tratamentos.map(t => new Option(t, t)));
+// dia mínimo: hoje (se ainda der tempo) ou o próximo dia útil
+(function () {
+  const { hora } = agoraSP();
+  dia.min = (naoAtende(hoje) || hora >= CONFIG.fecha - 1) ? proximoUtil(hoje) : hoje;
+})();
+
+function erro(campo, msg, sugestao) {
+  campo.setAttribute("aria-invalid", msg ? "true" : "false");
+  const alvo = $("#" + campo.getAttribute("aria-describedby").split(" ")[0]);
+  alvo.textContent = msg;
+  if (sugestao) {
+    const b = document.createElement("button"); b.type = "button"; b.className = "sugerir";
+    b.textContent = `Usar ${fmt(sugestao)}`;
+    b.addEventListener("click", () => { dia.value = sugestao; validar(false); atualizar(); dia.focus(); });
+    alvo.append(" ", b);
+  }
+}
+function validar(tudo) {
+  let ok = true;
+  if (!dia.value) { if (tudo) erro(dia, "Escolha um dia."); ok = false; }
+  else if (dia.value < dia.min) { erro(dia, "Escolha uma data a partir de hoje.", dia.min); ok = false; }
+  else if (fimDeSemana(dia.value)) { erro(dia, "Atendemos de segunda a sexta.", proximoUtil(dia.value)); ok = false; }
+  else if (feriado(dia.value)) { erro(dia, `Feriado (${feriado(dia.value)}): a clínica não atende.`, proximoUtil(dia.value)); ok = false; }
+  else erro(dia, "");
+  if (!nome.value.trim()) { if (tudo) erro(nome, "Informe o nome do paciente."); ok = false; } else erro(nome, "");
+  return ok;
+}
+const periodo = () => form.querySelector("input[name=periodo]:checked").value;
+function mensagem() {
+  const p = periodo() === "manha" ? "manhã (9h às 12h)" : "tarde (13h às 17h)";
+  return [
+    `Olá! Gostaria de agendar uma consulta na ${CONFIG.nome}.`, "",
+    `• Paciente: ${nome.value.trim() || "—"}`,
+    `• Tratamento de interesse: ${trat.value}`,
+    `• Dia preferido: ${dia.value && !naoAtende(dia.value) && dia.value >= dia.min ? fmt(dia.value) : "—"}`,
+    `• Período: ${p}`,
+    $("#primeira").checked ? "• É minha primeira consulta na clínica" : null,
+    "", "Fico no aguardo da confirmação do horário."
+  ].filter(l => l !== null).join("\n");
+}
+const atualizar = () => { $("#bolha").textContent = mensagem(); };
+dia.addEventListener("change", () => { validar(false); atualizar(); });
+form.addEventListener("input", atualizar);
+form.addEventListener("change", atualizar);
+nome.addEventListener("input", () => { if (nome.value.trim()) erro(nome, ""); });
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  if (!validar(true)) { form.querySelector('[aria-invalid="true"]')?.focus(); return; }
+  window.open(linkZap(mensagem()), "_blank", "noopener");
+});
+atualizar();
+
+/* ---------- Entrada ao rolar ---------- */
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("ok"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: .08 });
+  $$(".surge").forEach(el => io.observe(el));
+} else $$(".surge").forEach(el => el.classList.add("ok"));
+</script>
+</body>
+</html>
